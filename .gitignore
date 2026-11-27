@@ -1,0 +1,11 @@
+.env
+.env.*
+.venv/
+__pycache__/
+*.PublishSettings
+*.publishsettings
+*.pubxml
+*.pubxml.user
+local.settings.json
+requirements.md
+*.zip

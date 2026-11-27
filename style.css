@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: #eee5cf;
+    color: #302820;
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+    line-height: 1.7
+}
+
+header,
+main,
+footer {
+    max-width: 1050px;
+    margin: auto;
+    padding: 20px
+}
+
+header {
+    text-align: center;
+    border-bottom: 5px double #514332
+}
+
+h1 {
+    font-size: clamp(40px, 8vw, 80px);
+    letter-spacing: .25em;
+    margin: 0
+}
+
+h1 a,
+a {
+    color: inherit
+}
+
+h1 a {
+    text-decoration: none
+}
+
+header p {
+    margin: 0
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    border-bottom: 3px double;
+    padding: 12px 0
+}
+
+nav a {
+    font-weight: bold
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px
+}
+
+aside {
+    border-left: 1px solid #84735d;
+    padding-left: 24px
+}
+
+h2 {
+    border-bottom: 1px solid #84735d
+}
+
+article {
+    border-bottom: 1px solid #84735d;
+    padding: 15px 0;
+    overflow-wrap: anywhere
+}
+
+h3 {
+    margin: 4px 0
+}
+
+small {
+    color: #665641
+}
+
+input,
+select,
+textarea,
+button {
+    font: inherit;
+    max-width: 100%;
+    padding: 8px;
+    border: 1px solid #84735d;
+    background: #faf4e4;
+    color: inherit
+}
+
+label {
+    display: block;
+    margin: 10px 0
+}
+
+label input,
+label select,
+label textarea {
+    display: block;
+    width: 100%
+}
+
+textarea {
+    min-height: 100px
+}
+
+button {
+    background: #873d30;
+    color: #fff5dc;
+    cursor: pointer
+}
+
+img {
+    max-width: 100%;
+    max-height: 400px
+}
+
+.body {
+    white-space: pre-wrap
+}
+
+footer {
+    text-align: center;
+    border-top: 3px double
+}
+
+@media(max-width:650px) {
+    .layout {
+        grid-template-columns: 1fr
+    }
+
+    aside {
+        border-left: 0;
+        padding-left: 0
+    }
+}
+
+/* 明治時代風の写真 */
+.meiji-photo {
+    margin: 20px 0;
+    padding: 6px;
+    border: 1px solid #84735d;
+}
+
+.meiji-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: sepia(60%);
+}
+
+.meiji-photo figcaption {
+    margin-top: 8px;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 2px;
+}
